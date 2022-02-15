@@ -56,12 +56,12 @@ table {
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  outline: 1px solid red;
 }
 
 body {
   font-size: 13px;
   font-family: 'Manrope', sans-serif;
+  background: #ecf2f8;
 }
 
 a {
@@ -75,12 +75,186 @@ img {
   width: 100%;
 }
 
+.wrap {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card {
+  background: #fff;
+  height: 260px;
+  max-width: 700px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 20px 30px #ccc;
+          box-shadow: 0 20px 30px #ccc;
+}
+
+.card_image {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 270px;
+          flex: 0 0 270px;
+  background-image: url("../images/drawers.jpg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 330px;
+  border-radius: 10px 0 0 10px;
+}
+
+.card_text {
+  padding: 30px 40px;
+  position: relative;
+}
+
+.card_text > p {
+  color: #6d7f97;
+  line-height: 1.5;
+  padding-bottom: 10px;
+}
+
+h1 {
+  color: #48556a;
+  font-size: 20px;
+  line-height: 1.2;
+  padding-bottom: 10px;
+}
+
+.card_author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card_author > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.author_image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.author_text h2 {
+  color: #48556a;
+  line-height: 20px;
+}
+
+.author_text p {
+  color: #9eafc2;
+  line-height: 20px;
+}
+
+.author_share a {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ecf2f8;
+  border-radius: 50%;
+  color: #48556a;
+  font-size: 13px;
+}
+
+.author_share a:hover {
+  background-color: #48556a;
+  color: #fff;
+}
+
+.author_floatBox {
+  position: absolute;
+  top: 130px;
+  left: 270px;
+  background: #48556a;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 3px 8px #ccc;
+          box-shadow: 0 3px 8px #ccc;
+}
+
+.author_floatBox::after {
+  content: '';
+  position: absolute;
+  top: 37px;
+  left: 89.23px;
+  width: 0;
+  height: 0;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #48556a transparent transparent transparent;
+}
+
+.author_floatBox p {
+  text-transform: uppercase;
+  color: #9eafc2;
+  margin: 0 6px;
+  letter-spacing: 4px;
+}
+
+.author_floatBox ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.author_floatBox a {
+  font-size: 15px;
+  margin: 6px;
+}
+
+.author_floatBox a:hover {
+  color: #ecf2f8;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
+  padding-top: 40px;
 }
 
 .attribution a {
+  display: inline-block;
   color: #3e52a3;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */

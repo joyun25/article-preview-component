@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](https://i.imgur.com/c60v2kp.png)
 
 ### Links
 

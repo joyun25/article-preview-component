@@ -20,12 +20,13 @@ $lightGrayishBlue: hsl(210, 46%, 95%);
 // My CSS
 * {
     box-sizing: border-box;
-    outline: 1px solid red;
+    // outline: 1px solid red;
 }
 
 body {
     font-size: 13px;
     font-family: 'Manrope', sans-serif;
+    background: $lightGrayishBlue;
 }
 
 a {
@@ -39,10 +40,145 @@ img {
     width: 100%;
 }
 
+.wrap {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card {
+    background: #fff;
+    height: 260px;
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 20px 30px #ccc;
+}
+
+.card_image {
+    flex: 0 0 270px;
+    background-image: url('../images/drawers.jpg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 330px;
+    border-radius: 10px 0 0 10px;
+}
+
+.card_text {
+    padding: 30px 40px;
+    position: relative;
+    > p {
+        color: $desaturatedDarkBlue;
+        line-height: 1.5;
+        padding-bottom: 10px;
+    }
+}
+
+h1 {
+    color: $veryDarkGrayishBlue;
+    font-size: 20px;
+    line-height: 1.2;
+    padding-bottom: 10px;
+}
+
+.card_author {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    > div {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.author_image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.author_text {
+    h2 {
+        color: $veryDarkGrayishBlue;
+        line-height: 20px;
+    }
+    p {
+        color: $grayishBlue;
+        line-height: 20px;
+    }
+}
+
+.author_share {
+    a {
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $lightGrayishBlue;
+        border-radius: 50%;
+        color: $veryDarkGrayishBlue;
+        font-size: 13px;
+        &:hover {
+            background-color: $veryDarkGrayishBlue;
+            color: #fff;
+        }
+    }
+}
+
+.author_floatBox {
+    // display: none;
+    position: absolute;
+    top: 130px;
+    left: 270px;
+    background: $veryDarkGrayishBlue;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px #ccc;
+    &::after {
+        content:'';
+        position: absolute;
+        top: 37px;
+        left: 89.23px;
+        width: 0;
+        height: 0;
+        border-width: 10px;
+        border-style: solid;
+        border-color: $veryDarkGrayishBlue transparent transparent transparent;
+    }
+    p {
+        text-transform: uppercase;
+        color: $grayishBlue;
+        margin: 0 6px;
+        letter-spacing: 4px;
+    }
+    ul {
+        display: flex;
+    }
+    a {
+        font-size: 15px;
+        margin: 6px;
+        &:hover {
+            color: $lightGrayishBlue;
+        }
+    }
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
+    padding-top: 40px;
     a {
+        display: inline-block;
         color: hsl(228, 45%, 44%);
+        text-decoration: underline;
     }
 }
