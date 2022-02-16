@@ -36,3 +36,4 @@ Users should be able to:
 - Flexbox
 - Scss
 - jQuery
+- NPM
