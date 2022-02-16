@@ -26,7 +26,6 @@ $lightGrayishBlue: hsl(210, 46%, 95%);
 // My CSS
 * {
     box-sizing: border-box;
-    // outline: 1px solid red;
 }
 
 body {
@@ -168,7 +167,6 @@ h1 {
 }
 
 .author_floatBox {
-    // display: none;
     position: absolute;
     top: 130px;
     left: 270px;
@@ -232,25 +230,28 @@ h1 {
         }
     }
 }
-.wrap {
-    .author_floatBox_share {
-        display: none;
-        @include pad {
-            display: block;
-            a {
-                width: 30px;
-                height: 30px;
-                margin: 5px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-radius: 50%;
-                font-size: 13px;
-                background-color: $desaturatedDarkBlue;
-                color: #fff;
-            }
+
+.wrap .author_floatBox_share {
+    display: none;
+    @include pad {
+        display: block;
+        a {
+            width: 30px;
+            height: 30px;
+            margin: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 13px;
+            background-color: $desaturatedDarkBlue;
+            color: #fff;
         }
     }
+}
+
+.wrap .hidden{
+    display: none;
 }
 
 .attribution {

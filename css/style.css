@@ -369,6 +369,10 @@ h1 {
   }
 }
 
+.wrap .hidden {
+  display: none;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
