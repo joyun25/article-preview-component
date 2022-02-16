@@ -232,6 +232,26 @@ h1 {
         }
     }
 }
+.wrap {
+    .author_floatBox_share {
+        display: none;
+        @include pad {
+            display: block;
+            a {
+                width: 30px;
+                height: 30px;
+                margin: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                font-size: 13px;
+                background-color: $desaturatedDarkBlue;
+                color: #fff;
+            }
+        }
+    }
+}
 
 .attribution {
     font-size: 11px;
@@ -241,14 +261,5 @@ h1 {
         display: inline-block;
         color: hsl(228, 45%, 44%);
         text-decoration: underline;
-    }
-}
-
-.wrap {
-    .pad-only {
-        display: none;
-        @include pad {
-            display: block;
-        }
     }
 }
