@@ -1,0 +1,22 @@
+{
+  "name": "article-preview-component",
+  "version": "1.0.0",
+  "description": "This is a solution to the [Article preview component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT). Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joyun25/article-preview-component.git"
+  },
+  "author": "Jo Yun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joyun25/article-preview-component/issues"
+  },
+  "homepage": "https://github.com/joyun25/article-preview-component#readme",
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
+}
